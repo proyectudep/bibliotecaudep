@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - UDEP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .banner {
+            background-color: #0056b3;
+            padding: 20px;
+            text-align: center;
+        }
+        .banner img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content p {
+            text-align: center;
+            font-size: 18px;
+        }
+        .sections {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .section {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: white;
+            text-align: center;
+            max-width: 200px;
+        }
+        .section img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .section h3 {
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        section {
+            padding: 40px 20px;
+            background-color: white;
+            border-top: 2px solid #e0e0e0;
+            margin: 20px 0;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .category-section {
+            text-align: center;
+        }
+        .category-section img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .category-section p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .category-section .items {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .category-section .items img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .category-section .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ddd;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../../../Downloads/file.png"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/f3bba995-3f5f-4ec0-b186-00f176228ad2/d3d4kwp-1bcd77d7-c6cc-40dc-997a-48b7d00d6134.png/v1/fill/w_713,h_961,q_75,strp/udep_logo_by_migueltrega-d3d4kwp.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvaS9mM2JiYTk5NS0zZjVmLTRlYzAtYjE4Ni0wMGYxNzYyMjhhZDIvZDNkNGt3cC0xYmNkNzdkNy1jNmNjLTQwZGMtOTk3YS00OGI3ZDAwZDYxMzQucG5nIiwid2lkdGgiOiI8PTcxMyIsImhlaWdodCI6Ijw9OTYxIn1dXX0.RFvJSpCJAF95pmGJAkkfDVn7BOipsSnhG4F2yAcm-Ro" alt="UDEP Logo"></a>
+<h1>BIBLIOTECA - UDEP</h1>
+        <button onclick="alert('Registro no disponible.');">Regístrate</button>
+    </header>
+    <nav>
+        <a href="#libros">LIBROS</a>
+        <a href="#audiolibros">AUDIOLIBROS</a>
+        <a href="#manuscritos">MANUSCRITOS</a>
+        <a href="#imagenes">IMAGENES</a>
+        <a href="#acerca">ACERCA DE UDEP</a>
+    </nav>
+    <div class="banner">
+        <img src="https://www.peru.travel/contenido/noticia/imagen/es/922/1.0/principal/biblioteca1.jpg" alt="Banner">
+    </div>
+    <div class="content">
+        <p>Revisa nuestros artículos y entrevistas más interesantes. Pon a prueba tu capacidad de retención, con información científica, social y cultural.</p>
+        <div class="sections">
+            <div class="section">
+                <a href="#libros">
+                    <img src="https://images.unsplash.com/photo-1506513083865-434a8a207e11?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Libros">
+                <h2>Libros</h2>
+                </a>
+            </div>
+            <div class="section">
+                <a href="#audiolibros">
+                    <img src="https://images.unsplash.com/photo-1615714891303-5c99c8f0f11d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Audiolibros">
+                <h2>Audiolibros</h2>
+                </a>
+            </div>
+            <div class="section">
+                <a href="#manuscritos">
+                    <img src="https://images.unsplash.com/photo-1603361233308-b3ec0f7c0a16?q=80&w=2116&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Manuscritos">
+                <h2>Manuscritos</h2>
+                </a>
+            </div>
+            <div class="section">
+                <a href="#imagenes">
+                    <img src="https://tvrobles.lamula.pe/media/uploads/61612657-e3f7-4e57-b03b-c7d698d9666d.jpg" alt="Imágenes">
+                <h2>Imágenes</h2>
+                </a>
+            </div>
+            <div class="section">
+                <a href="#acerca">
+                    <img src="https://1.bp.blogspot.com/-uHQFRI4K9P8/W_XYmmvM0XI/AAAAAAABLcc/QBtGot1G8isFDkYAN0VI8wtUmbe-_uG0QCLcBGAs/s1600/universidad-de-piura-logo.jpg" alt="Acerca de UDEP">
+                <h2>Acerca de UDEP</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section id="libros" class="category-section">
+        <h2>LIBROS</h2>
+        <img src="https://peru21.pe/resizer/3-fbhlTakwkO4FW6qEZM1IrEwms=/580x330/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/BFNLXZCSEZHBBAQJS37JGQVMXQ.jpg" alt="Autores, Libros, Biografías">
+        <p>Nuestra gran literatura conformada por grandes autores, cuyo reflejo se vio plasmado en muchas obras de invaluable valor, así mismo, dejando el nombre del país en alto.</p>
+        <div class="items">
+            <img src="https://www.librosperuanos.com/public_files/B23134.jpg" alt="Autor 1">
+            <img src="https://1.bp.blogspot.com/-okkU1XG7LN8/WmjEKolZhiI/AAAAAAAAj4M/yiMHftMskZ0o7LmiWMM8a0luGik5_GXwACLcBGAs/s1600/Trilce-1918-Cesar-Vallejo-LIBROSVIRTUAL.jpg" alt="Autor 2">
+            <img src="https://cosasbucket.s3.amazonaws.com/wp-content/uploads/2022/02/24162336/WhatsApp-Image-2022-02-24-at-3.35.11-PM.jpeg" alt="Autor 3">
+        </div>
+        <a href="#" class="button">LIBROS Y LETRAS</a>
+    </section>
+
+    <section id="audiolibros" class="category-section">
+        <h2>AUDIOLIBROS</h2>
+        <img src="https://th.bing.com/th/id/OIP.z3OZFb2zMaATLx7NMThMWgHaEB?rs=1&pid=ImgDetMain" alt="Audiolibros">
+        <p>Escucha los relatos, opiniones y críticas de nuestros libros en edición, relatadas por diferentes en una versión entretenida e informativa, la cual podrás escuchar a cualquier hora del día, lugar y hasta de manera offline, ya que contamos con la descarga de cada uno de nuestros podcast. ¡Diviértete mucho!</p>
+        <div class="items">
+            <div>
+                <img src="https://1.bp.blogspot.com/-shpFuBBipeU/W9sbbiS2SzI/AAAAAAAADHc/fNqgF9h8Gh44_TkFhkXoR6VBhuFwwbGuQCLcBGAs/s1600/9788420412337.jpg" alt="La ciudad y los perros">
+                <p>La ciudad y los perros</p>
+                <a href="#" class="button">ESCUCHA AHORA</a>
+            </div>
+            <div>
+                <img src="https://2.bp.blogspot.com/-ICJfo98Wd1E/WmeWlUI0hnI/AAAAAAAAjyc/vgObDQEk1JYo8dLavAEwcbPNbeFdypGlACLcBGAs/s1600/Los-Heraldos-Negros-1959-Cesar-Vallejo-LIBROSVIRTUAL.jpg" alt="Los heraldos negros">
+                <p>Los heraldos negros</p>
+                <a href="#" class="button">ESCUCHA AHORA</a>
+            </div>
+            <div>
+                <img src="http://isbn.bnp.gob.pe/files/titulos/104105.jpg" alt="Relatos de la frontera">
+                <p>Relatos de la frontera</p>
+                <a href="#" class="button">ESCUCHA AHORA</a>
+            </div>
+            <div>
+                <img src="http://isbn.bnp.gob.pe/files/titulos/104099.jpg" alt="Mitos y leyendas de Piura y Tumbes">
+                <p>Mitos y leyendas de Piura y Tumbes</p>
+                <a href="#" class="button">ESCUCHA AHORA</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="manuscritos" class="category-section">
+        <h2>MANUSCRITOS</h2>
+        <img src="https://th.bing.com/th/id/OIP.6sm7dj65yjeCrjWz7Diu5gHaEc?rs=1&pid=ImgDetMain" alt="Manuscritos">
+        <p>Descubre nuestra colección de manuscritos históricos y contemporáneos, que capturan la esencia de la escritura a lo largo del tiempo.</p>
+        <div class="items">
+            <img src="https://fuenteshistoricasdelperu.com/wp-content/uploads/2021/01/1-1.jpg" alt="Manuscrito 1">
+            <img src="https://portal.andina.pe/EDPfotografia3/Thumbnail/2021/06/27/000785153W.jpg" alt="Manuscrito 2">
+            <img src="https://www.bibliotecanacionaldigital.gob.cl/bnd/623/articles-335602_thumbnail.jpg" alt="Manuscrito 3">
+        </div>
+        <a href="#" class="button">EXPLORA MANUSCRITOS</a>
+    </section>
+
+    <section id="imagenes" class="category-section">
+        <h2>IMÁGENES</h2>
+        <img src="https://elcomercio.pe/resizer/cJcvPatXO4ej1TLKF6epe7jkMgA=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/XS2P4PQMSVBKJOQFTPASDIYVG4.jpg" alt="Imágenes">
+        <p>Explora nuestra galería de imágenes que capturan momentos históricos, artísticos y culturales de nuestra herencia.</p>
+        <div class="items">
+            <img src="https://elcomercio.pe/resizer/IPUmPEaVW5fX65TpjTAsbkuUYIk=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/O5QU2CHQZZCPPFUIEZD5S3ODLA.jpg" alt="Imagen 1">
+            <img src="https://www.centrodelaimagen.edu.pe/sites/default/files/chambi1.jpg" alt="Imagen 2">
+            <img src="https://elcomercio.pe/resizer/i_TTBY41soxGJjUhtubqC3dB5ms=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/UHOPVFLP7NCIHCLMCUUEDY4XQU.jpg" alt="Imagen 3">
+        </div>
+        <a href="#" class="button">DESCUBRE IMÁGENES</a>
+    </section>
+
+    <section id="acerca" class="category-section">
+        <h2>ACERCA DE UDEP</h2>
+        <img src="https://estudiaperu.pe/wp-content/uploads/2019/07/logoudepazul-1024x368.png" alt="Acerca de UDEP">
+        <p>Conoce más sobre la Universidad de Piura, nuestra historia, misión y los valores que nos guían.</p>
+        <a href="#" class="button">SABER MÁS</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Universidad de Piura. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
